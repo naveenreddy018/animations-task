@@ -1,0 +1,159 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+      height: 100vh;
+      
+      animation: ;
+        }
+        .a{
+            background-color: rgb(93, 93, 157);
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            animation: frame1 1s backwards infinite;
+            animation-duration: 0.2s;
+        }
+        .b{
+            background-color: red;
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            animation: frame2 1s infinite;
+            animation-duration:0.3s;
+        }
+        .c{
+            background-color:yellow;
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            animation: frame3 1s infinite;
+            animation-duration: 0.6s;
+        }
+        .d{
+            background-color:green;
+            height:50px;
+            width:50px;
+            border-radius: 50%;
+            animation: frame4 1s backwards infinite;
+            animation-duration: 0.9s;
+        }
+        @keyframes frame1 {
+            from{
+                 transform: translateY(0px);
+            }
+            to{
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes frame2 {
+            from{
+                 transform: translateY(0px);
+            }
+            to{
+                transform: translateY(10px);
+            }
+        }
+        @keyframes frame3 {
+            from{
+                 transform: translateY(0px);
+            }
+            to{
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes frame14{
+            from{
+                 transform: translateY(0px);
+            }
+            to{
+                transform: translateY(10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+        }
+        .container{
+            background-color: white;
+            width:300px;
+            height:300px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           gap:15px;
+        }
+        span{
+            width: 30px;
+            height:30px;
+            background-color: blue;
+            border-radius: 50%;
+            position: relative;
+        }
+        .two{
+            background-color: red;
+        }
+        .three{
+            background-color: yellow;
+        }
+        .four{
+            background-color: greenyellow;
+        }
+        .one,.two,.three,.four{
+            animation: sound 1s alternate infinite;
+        }
+        .two{
+            animation-delay: 0.3s;
+        }
+        .three{
+            animation-delay: 0.6s;
+        }
+        .four{
+            animation-delay: 0.9s;
+        }
+        @keyframes sound {
+            20%{top:0}
+            30%{top:-15px;}
+            50%{top:-45px;}
+            70%{top:-15px;}
+            80%{top:0px}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+    </div>
+</body>
+</html>
